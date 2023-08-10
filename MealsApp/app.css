@@ -1,0 +1,198 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    
+     
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(212, 229, 85);
+    background-size: cover;
+    overflow-y: scroll;
+    padding: 1%;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3a545e;
+    margin-bottom: 0.7%;
+}
+
+#search-container {
+    width: 50%;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+#search-container input {
+    height: 40%;
+    width: 50%;
+    margin-right: 1%;
+    font-size: 17px;
+    padding-left: 2%;
+}
+
+#search-container button {
+    background-color: #B72322;
+    height: 47%;
+    color: white;
+    margin-right: 5%;
+    transition: transform 0.1s ease;
+}
+
+#search-container button:active {
+    background-color: #03a1e0;
+    transform: scale(0.95);
+}
+
+#search-container button:nth-child(odd) {
+    width: 30%;
+    font-size: 15px;
+}
+
+#meals-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; /*added after */
+    margin: auto;
+}
+
+.meal-card {
+    width: 30%;
+    height: 45vh;
+    margin: 0 1% 2% 1%;
+    border: 1px solid #000000;
+    padding-bottom: 1%;
+    transition: transform 0.2s ease;
+    opacity: .85;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal-card:hover {
+    transform: translate(-5px, 4px);
+    box-shadow: 3px 3px 3px #06c5f0, -2px -2px 2px #d9ed67;
+    opacity: 1;
+}
+
+.meal-card h4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #a16a61;
+    margin: 3%;
+}
+
+.meal-card img {
+    width: 100%;
+    height: 73%;
+}
+
+.meal-card button {
+    background-color: #E0C555;
+    width: 45%;
+    height: 12%;
+    color: #3C2C10;
+    margin-left: 8%;
+    margin-right: 30%;
+    transition: transform 0.1s ease;
+}
+
+.meal-card button:active {
+    transform: scale(0.95);
+}
+
+.meal-card a {
+    display: inline-block;
+    width: 10%;
+    height: 8%;
+    text-align: center;
+    padding-top: 2%;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+}
+
+.clicked {
+    background-color: #DFDFDF !important;
+    color: red !important;
+}
+
+.meal-card:hover {
+    box-shadow: 2px 2px 2px #DFDFDF, -2px -2px 2px #DFDFDF;
+}
+
+.styled-input {
+    border-radius: 50px;
+}
+
+.details-card {
+    margin: 0 1% 2% 1%;
+    border: 1px solid #DFDFDF;
+    width: 70%;
+    color: rgb(221, 99, 144);
+    padding: 1%;
+    height: fit-content;
+}
+
+.details-card h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #d1b722;
+    margin: 3%;
+}
+
+.details-card h5 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3a392f;
+    margin: 0 50% 0 5%;
+    display: inline;
+}
+
+.details-card img {
+    margin-left: 10%;
+    width: 80%;
+    height: 30vh;
+}
+
+/* Styles for the new buttons */
+
+.styled-button {
+    background-color: #f6b938;
+    border: 1px solid #b73e26;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+.styled-button:active {
+    background-color: #ed5d2d;
+    transform: scale(0.95);
+}
+
+#clear-button, #instructions-button {
+    background-color: #06c5f0;
+    border: 1px solid #036abf;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+#clear-button:active, #instructions-button:active {
+    background-color: #03a1e0;
+    transform: scale(0.95);
+}
