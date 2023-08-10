@@ -12,9 +12,9 @@ The Meal App is a simple application that allows users to search for various mea
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/yourusername/meal-app.git`
+1. Clone the repository: `git clone https://github.com/keshavgautam1/meal-app.git`
 2. Navigate to the project directory: `cd meal-app`
-3. Open the `index.html` file in your preferred web browser.
+3. Open the `app.html` file in your preferred web browser.
 4. Start searching for meals and adding your favorites!
 
 ## Usage
